@@ -12,7 +12,7 @@ $generator = new barcode_generator();
 
 date_default_timezone_set("Asia/Shanghai");
 $mailServer="****"; //IMAP主机
-$mailLink="{{$mailServer}:993/imap/ssl}INBOX" ; //imagp连接地址：不同主机地址不同
+$mailLink="{{$mailServer}:993/imap/ssl}INBOX" ; //imap连接地址
 $mailUser = '****'; //邮箱用户名
 $mailPass = '****'; //邮箱密码
 $mbox = imap_open($mailLink,$mailUser,$mailPass) or die("can't connect: " . imap_last_error()); //开启信箱imap_open
